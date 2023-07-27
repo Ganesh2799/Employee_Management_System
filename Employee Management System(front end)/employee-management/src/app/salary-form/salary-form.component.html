@@ -1,0 +1,24 @@
+<form [formGroup]= "salaryForm" (ngSubmit)= "onSubmit()">
+    <div>
+      <label>First Name:</label>
+      <input type="text" formControlName="firstName" />
+    </div>
+    <div>
+      <label>Last Name:</label>
+      <input type="text" formControlName="lastName" />
+    </div>
+    <div>
+      <label>Basic Salary:</label>
+      <input type="number" formControlName="basicSalary" />
+    </div>
+    <div>
+      <label>Attendance:</label>
+      <input type="number" formControlName="attendance" />
+    </div>
+    <div>
+      <label>Other Deductions:</label>
+      <input type="number" formControlName="otherDeductions" />
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+  

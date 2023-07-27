@@ -1,0 +1,71 @@
+/* Reset default browser styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Form container */
+div {
+  width: 60%;
+  margin: auto;
+  border: 1px dashed rgb(216, 228, 232);
+  padding: 15px;
+  background-color: rgb(188, 233, 219);
+}
+
+/* Form title */
+h3 {
+  text-align: center;
+  color: purple;
+  font-family: Arial, sans-serif;
+  margin-bottom: 20px;
+}
+
+/* Form elements using grid layout */
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.form-group {
+  width: 100%; /* Adjusted to take up full grid column width */
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: purple;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid purple;
+}
+
+/* Submit button */
+button {
+  grid-column: span 2; /* Adjusted to span across both grid columns */
+  width: 100%; /* Adjusted to take up full grid column width */
+  padding: 12px;
+  background-color: purple;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #5c1467; /* Adjusted hover color */
+}

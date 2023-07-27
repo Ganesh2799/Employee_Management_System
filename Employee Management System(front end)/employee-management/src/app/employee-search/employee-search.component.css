@@ -1,0 +1,135 @@
+/* 
+div {
+  margin-top: 30px;
+  padding: 10px;
+  border: 5px solid #ccc;
+  border-radius: 10px;
+  max-width: 400px; 
+  margin: 0 auto; 
+}
+
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px; 
+}
+
+
+input[type="text"] {
+  padding: 10px;
+  margin-bottom: 10px; 
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 100%; 
+}
+
+
+button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+
+div[ngIf="searchResults.length > 0"] {
+  margin-top: 40px;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; 
+}
+
+
+li {
+  margin-bottom: 5px;
+} */
+/* employee-search.component.css */
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  display: block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.employee-details {
+  margin-top: 20px;
+}
+
+.employee-details table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.employee-details th,
+.employee-details td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.employee-details th {
+  background-color: #f0f0f0;
+}
+
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.alert-danger strong {
+  font-weight: bold;
+}
+
+/* Media Query for small screens */
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+}
+

@@ -1,0 +1,43 @@
+/* Reset default browser styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #c19ae8;
+}
+
+/* Center the section */
+h3 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+div {
+  width: 60%;
+  margin: auto;
+  border: 1px solid #ddd;
+  padding: 15px;
+  background-color: #fff;
+}
+
+/* Employee details */
+div > div {
+  margin-bottom: 10px;
+}
+
+label {
+  display: inline-block;
+  font-weight: bold;
+  width: 120px;
+  color: #282727;
+}
+
+/* Employee details values */
+b {
+  font-weight: normal;
+  color: #0d0c0c;
+}

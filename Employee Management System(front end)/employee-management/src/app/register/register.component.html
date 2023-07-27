@@ -1,0 +1,73 @@
+<!-- <form class="form" (ngSubmit)="SaveUsers()">
+  <p class="title" align="center">Register</p>
+  <p class="message">Signup now and get full access to our app.</p>
+  <div class="flex">
+    <label>
+      <input required name="first_name" placeholder="" type="text" [(ngModel)]="user.first_name" class="input">
+      <span>Firstname</span>
+    </label>
+
+    <label>
+      <input name="last_name" ngModel required [(ngModel)]="user.last_name" placeholder="" type="text" class="input">
+      <span>Lastname</span>
+    </label>
+  </div>
+  <label>
+    <input name="user_name" ngModel required [(ngModel)]="user.user_name" placeholder="" type="text" class="input">
+    <span>Username</span>
+  </label>
+
+  <label>
+    <input ngModel required [(ngModel)]="user.userpassword" name="psw" placeholder="" type="password" class="input">
+    <span>Password</span>
+  </label>
+  <label>
+    <input name="user_address1" ngModel required [(ngModel)]="user.user_address1" placeholder="" type="address" class="input">
+    <span>Address1</span>
+  </label>
+  <label>
+    <input name="user_address2" ngModel required [(ngModel)]="user.user_address2" type="address" class="input">
+    <span>Address2</span>
+  </label>
+  <button class="submit" style="display: block; margin: 0 auto;">Submit</button>
+
+  <p class="signin">Already have an account? <a href="#">Sign in</a></p>
+</form> -->
+<form class="form" (ngSubmit)="SaveUsers()">
+  <p class="title" align="center">Register</p>
+  <!-- <p class="message">Signup now and get full access to our app.</p> -->
+  <div class="flex">
+    <label>
+      <input required name="first_name" placeholder="" type="text" [(ngModel)]="user.first_name" class="input" aria-label="First Name">
+      <span>Firstname</span>
+    </label>
+
+    <label>
+      <input name="last_name" ngModel required [(ngModel)]="user.last_name" placeholder="" type="text" class="input" aria-label="Last Name">
+      <span>Lastname</span>
+    </label>
+  </div>
+  <label for="username">UserName</label>
+  <label>
+    <input name="user_name" ngModel required [(ngModel)]="user.user_name" placeholder="" type="text" #UserName="ngModel" minlength="2" maxlength="15" class="input" aria-label="Username">
+    <!-- <span>Username</span> --><span *ngIf="UserName.touched && UserName.invalid" style="color: red;"> Enter UserName</span>
+  </label>
+
+  <label for="password">Password</label>
+  <label>
+    <input ngModel required [(ngModel)]="user.userpassword" name="psw" placeholder="" type="password" #pass="ngModel" minlength="2" maxlength="15" class="input" aria-label="Password">
+    <!-- <span>Password</span> --><span *ngIf="pass.touched && pass.invalid" style="color: red;"> Enter Password</span>
+  </label>
+  <label>
+    <input name="user_address1" ngModel required [(ngModel)]="user.user_address1" placeholder="" type="address" class="input" aria-label="Address Line 1">
+    <span>Address1</span>
+  </label>
+  <label>
+    <input name="user_address2" ngModel required [(ngModel)]="user.user_address2" type="address" class="input" aria-label="Address Line 2">
+    <span>Address2</span>
+  </label>
+  <button class="submit" style="display: block; margin: 0 auto;">Submit</button>
+
+  <p class="signin">Already have an account? <a href="#">Sign in</a></p>
+</form>
+

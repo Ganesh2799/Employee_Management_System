@@ -1,0 +1,85 @@
+/* Reset default browser styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Center the table and header */
+h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+/* Table header styles */
+thead {
+  background-color: #007bff;
+  color: #fff;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  font-weight: bold;
+}
+
+/* Alternate row colors for better readability */
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Button styles */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Color variations for the buttons */
+button.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+button.btn-success {
+  background-color: #28a745;
+  color: #fff;
+}
+
+button.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+button.btn-info {
+  background-color: #17a2b8;
+  color: #fff;
+}
+
+/* Margin between the buttons */
+td button:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* Hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}

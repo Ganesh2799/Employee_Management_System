@@ -1,0 +1,58 @@
+
+<h3>Create a new leave</h3>
+<form  #leaveForm="ngForm"  (ngSubmit)="onSubmit()" >
+  <div>
+    <label for="employeeId">Employee ID</label>
+    <input type="number" id="employeeId" name="employeeId" [(ngModel)]="employeeId" required>
+  </div>
+  <div>
+    <label for="reason">Reason</label>
+    <input type="text" id="reason" name="reason" [(ngModel)]="leave.reason" required>
+  </div>
+  <div>
+    <label for="startDate">Start Date</label>
+    <input type="date" id="startDate" name="startDate" [(ngModel)]="leave.startDate" required>
+  </div>
+  <div>
+    <label for="endDate">End Date</label>
+    <input type="date" id="endDate" name="endDate" [(ngModel)]="leave.endDate" required>
+  </div>
+  <button  type="submit" [disabled]="!leaveForm.valid">Submit</button>
+</form>
+<h3 align="center">Leaves of Employee {{ employeeId }}</h3>
+<div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+<!-- <table>
+  <tr>
+    <th>Employee ID</th>
+    <th>Reason</th>
+    <th>Start Date</th>
+    <th>End Date</th>
+  </tr>
+  <tr *ngFor="let leave of leaves">
+    <td>{{ leave.employeeId }}</td>
+    <td>{{ leave.reason }}</td>
+    <td>{{ leave.startDate | date }}</td>
+    <td>{{ leave.endDate | date }}</td>
+  </tr>
+</table> -->
+<!-- leave.component.html -->
+<table>
+  <tr>
+    <th>Employee ID</th>
+    <th>Reason</th>
+    <th>Start Date</th>
+    <th>End Date</th>
+  </tr>
+  <tr *ngFor="let leave of leaves">
+    <td>{{ leave.employeeId }}</td>
+    <td>{{ leave.reason }}</td>
+    <td>{{ leave.startDate | date }}</td>
+    <td>{{ leave.endDate | date }}</td>
+  </tr>
+</table>
+
+
+
+
+
+

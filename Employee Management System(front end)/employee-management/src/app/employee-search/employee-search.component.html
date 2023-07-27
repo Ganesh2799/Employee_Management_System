@@ -1,0 +1,54 @@
+
+  <br>
+    <h2 align="center">Search Employee</h2><br>
+  <div class="container">
+    <form>
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" class="form-control" id="firstName" [(ngModel)]="firstName" name="firstName">
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" class="form-control" id="lastName" [(ngModel)]="lastName" name="lastName">
+      </div>
+      <button type="button" class="btn btn-primary" (click)="searchEmployee()" align="center">Search</button>
+    </form>
+  </div>
+  
+  <div *ngIf="employee" class="container mt-3">
+    <h3 align="center">Employee Details</h3>
+    <table class="table table-bordered">
+      <tr>
+        <th>ID</th>
+        <td>{{employee.id}}</td>
+      </tr>
+      <tr>
+        <th>First Name</th>
+        <td>{{employee.firstName}}</td>
+      </tr>
+      
+      <tr>
+        <th>Last Name</th>
+        <td>{{employee.lastName}}</td>
+      </tr>
+      <tr>
+        <th>Email Id</th>
+        <td>{{employee.emailId}}</td>
+      </tr>
+      <tr>
+        <th>Designation</th>
+        <td>{{employee.designation}}</td>
+      </tr>
+      <tr>
+        <th>Salary</th>
+        <td>{{employee.salary}}</td>
+      </tr>
+     
+    </table>
+  </div>
+  
+  <div *ngIf="error" class="container mt-3">
+    <div class="alert alert-danger">
+      {{error}}
+    </div>
+  </div>

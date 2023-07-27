@@ -1,0 +1,43 @@
+<br><br>
+<h3 align="center"> Update Employee </h3>
+<br><br>
+<div >
+    
+    <form (ngSubmit) = "onSubmit()">
+       
+          <!-- <div class="form-group">
+            <label>Employee Id:</label>
+            <input type="text" id="employeeId" [(ngModel)] = "employee.employeeId" class="form-control" [ngModelOptions]="{standalone: true}">
+            
+          </div> -->
+        <div class="form-group">
+            <label> First Name</label>
+            <input type="text" class ="form-control" id = "firstName"
+                [(ngModel)] = "employee.firstName" name = "firstName">
+        </div>
+    
+        <div class="form-group">
+            <label> Last Name</label>
+            <input type="text" class ="form-control" id = "lastName"
+                [(ngModel)] = "employee.lastName" name = "lastName">
+        </div>
+    
+        <div class="form-group">
+            <label> Email Id</label>
+            <input type="text" class ="form-control" id = "emailId"
+                [(ngModel)] = "employee.emailId" name = "emailId">
+        </div>
+        <div class="form-group">
+            <label>Designation:</label>
+            <input type="text" id="designation" [(ngModel)] = "employee.designation" class="form-control" [ngModelOptions]="{standalone: true}">
+            
+          </div>
+          <div class="form-group">
+            <label>Salary</label>
+            <input type="number" id="salary" [(ngModel)]="employee.salary" class="form-control" [ngModelOptions]="{standalone: true}">
+          </div>
+    
+        <button class = "btn btn-success" type ="submit">Submit</button>
+    
+    </form>
+    </div> 

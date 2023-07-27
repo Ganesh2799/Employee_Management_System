@@ -1,0 +1,16 @@
+<h1>Leaves of Employee {{ employeeId }}</h1>
+<div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+<table>
+  <tr>
+    <th>Employee ID</th>
+    <th>Reason</th>
+    <th>Start Date</th>
+    <th>End Date</th>
+  </tr>
+  <tr *ngFor="let leave of leaves">
+    <td>{{ leave.employeeId }}</td>
+    <td>{{ leave.reason }}</td>
+    <td>{{ leave.startDate | date }}</td>
+    <td>{{ leave.endDate | date }}</td>
+  </tr>
+</table>

@@ -1,0 +1,26 @@
+.navbar {
+    background-color: blue;
+  }
+  
+  .navbar-nav .nav-item {
+    margin-right: 10px;
+  }
+  
+  .nav-link {
+    color: #fff;
+  }
+  
+  .nav-link:hover {
+    color: #fff;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  

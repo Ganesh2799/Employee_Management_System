@@ -1,0 +1,163 @@
+/* login.component.css
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+  }
+  
+  button[type="submit"] {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  } */
+  /* Reset default browser styles */
+  /* login.component.css */
+/* login.component.css */
+
+.form-container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.form {
+  margin-top: 1.5rem;
+}
+
+.input-group {
+  margin-top: 0.25rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.forgot {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+}
+
+.forgot a {
+  color: #333;
+  text-decoration: none;
+}
+
+.sign {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.social-message {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.line {
+  height: 1px;
+  flex: 1 1 0%;
+  background-color: #333;
+}
+
+.social-message .message {
+  padding: 0 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-icons .icon {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: transparent;
+  margin-left: 8px;
+}
+
+.social-icons .icon svg {
+  height: 20px;
+  width: 20px;
+  fill: #141313;
+}
+
+.signup {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.signup button {
+  margin-top: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.signup a {
+  color: #333;
+  text-decoration: none;
+}
+
+.signup a:hover {
+  text-decoration: underline;
+}
+
+
